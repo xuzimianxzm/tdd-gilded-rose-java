@@ -28,7 +28,7 @@ public class Commodity {
         return quality;
     }
 
-    private void checkQualityInvalidAndReset() {
+    protected void checkQualityInvalidAndReset() {
         if (quality > 50) {
             quality = 50;
         }
@@ -37,7 +37,7 @@ public class Commodity {
         }
     }
 
-    private void checkQualityInvalid() {
+    protected void checkQualityInvalid() {
         if (quality > 50 || quality < 0) {
             throw new CommodityQualityInvalidException();
         }
