@@ -35,6 +35,8 @@
 2. 考虑到所有的商品都有基本的属性和行为，仅有Quality规则不一样，所以采用lambda表达式(condition)来针对变化的部分,带来的好处是，所以种类的商品都可以公用同一个类，
 而不用为每一种商品定制一个类。
    
-3. 针对复杂的Quality规则，在service中用单独的业务类来提供？
+3. 针对复杂的Quality规则，可继承Commodity，将复杂的Quality规则内置到具体商品类中，如BackstagePass.
+
+
    
 

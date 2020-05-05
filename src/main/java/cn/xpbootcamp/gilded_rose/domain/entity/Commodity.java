@@ -10,6 +10,9 @@ public class Commodity {
     private int quality;
     private BiFunction<Commodity, Integer, Integer> condition;
 
+    public Commodity() {
+    }
+
     public Commodity(String name, int sellIn, int quality, BiFunction<Commodity, Integer, Integer> condition) {
         this.name = name;
         this.sellIn = sellIn;
